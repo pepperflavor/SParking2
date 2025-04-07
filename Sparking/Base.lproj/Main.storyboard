@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--내 위치로 찾기-->
+        <!--User Location View Controller-->
         <scene sceneID="2qX-oC-1hu">
             <objects>
                 <viewController id="fHk-2F-E9e" customClass="UserLocationViewController" customModule="Sparking" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                         <viewLayoutGuide key="safeArea" id="vjt-gI-DtY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="내 위치로 찾기" id="WDR-lg-5ij"/>
+                    <navigationItem key="navigationItem" id="oGP-uA-FcQ"/>
                     <connections>
                         <outlet property="mapView" destination="Sv3-je-mNm" id="30M-Hb-XNJ"/>
                         <outlet property="searchBar" destination="Io1-ru-DCH" id="ZK7-K5-6MY"/>
@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQY-k1-q6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988.54961832061065" y="-302.11267605633805"/>
+            <point key="canvasLocation" x="1915.2671755725189" y="-302.11267605633805"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="csP-O0-JTT">
@@ -54,7 +54,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="fHk-2F-E9e" kind="relationship" relationship="viewControllers" id="ykL-ae-axS"/>
+                        <segue destination="Kng-yx-l9D" kind="relationship" relationship="viewControllers" id="ykL-ae-axS"/>
                         <segue destination="1To-YC-gHU" kind="relationship" relationship="viewControllers" id="XuR-yb-1i8"/>
                     </connections>
                 </tabBarController>
@@ -263,6 +263,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fY-5X-BHZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="983.96946564885491" y="405.63380281690144"/>
+        </scene>
+        <!--내 위치로 찾기-->
+        <scene sceneID="O8V-SC-HSD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kng-yx-l9D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="내 위치로 찾기" id="WDR-lg-5ij"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lzb-cI-oU8">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fHk-2F-E9e" kind="relationship" relationship="rootViewController" id="p21-B3-gqi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCL-ql-HSq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988.54961832061065" y="-302.11267605633805"/>
         </scene>
     </scenes>
     <resources>

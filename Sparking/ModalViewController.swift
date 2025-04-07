@@ -16,6 +16,7 @@ class ModalViewController: UIViewController {
     
     var parkingLot: Row?
     var listVC: UIViewController?
+    var userVC: UIViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,7 @@ class ModalViewController: UIViewController {
             navigateVC.parkingLot = self.parkingLot
             
             self.listVC?.navigationController?.pushViewController(navigateVC, animated: true)
+            self.userVC?.navigationController?.pushViewController(navigateVC, animated: true)
         }
     }
 }

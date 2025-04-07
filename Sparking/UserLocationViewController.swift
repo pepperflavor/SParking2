@@ -436,8 +436,12 @@ class UserLocationViewController: UIViewController, UISearchBarDelegate {
             if let detailVC = sb.instantiateViewController(withIdentifier: "parkinginfo") as? ModalViewController {
                 detailVC.parkingLot = annotation.parkingData
                 detailVC.modalPresentationStyle = .pageSheet
+                
+                detailVC.userVC = self
                 present(detailVC, animated: true, completion: nil)
             }
+            
+            
         }
     }
     
