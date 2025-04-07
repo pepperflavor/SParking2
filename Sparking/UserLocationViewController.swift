@@ -39,6 +39,7 @@ class UserLocationViewController: UIViewController, UISearchBarDelegate {
         mapView.delegate = self
         manager.delegate = self
         searchBar.delegate = self
+        searchBar.placeholder = "'~구' 로 주소를 검색해주세요"
         manager.requestWhenInUseAuthorization() // 권한 요청
         
         searchWithQuery(searchKey)
