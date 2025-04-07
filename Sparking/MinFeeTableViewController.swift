@@ -18,6 +18,7 @@ class MinFeeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
+        searchBar.placeholder = "'~구' 로 주소를 검색해주세요"
     }
     
     // query 이용해서 서치
